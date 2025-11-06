@@ -1,0 +1,22 @@
+languageCode = "it"
+languageName = "Italiano"
+weight = 1
+title = "Tommaso Palmerini - Massoterapista"
+
+[params]
+  displayName = "IT"
+  isoCode = "it"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  description = "Massoterapista laureato in Scienze Motorie"
+
+[params.author]
+  name = "Tommaso Palmerini"
+  # image = "img/tommaso.jpg"
+  headline = "Massoterapista - Laureato in Scienze Motorie"
+  bio = "Professionista specializzato in massoterapia e benessere fisico"
+  # links = [
+  #   { email = "mailto:info@tommasopalmerini.it" },
+  #   { link = "https://forms.google.com/..." },
+  # ]
