@@ -31,18 +31,22 @@ Premi `Ctrl+C` nel terminale dove sta girando Hugo.
 
 ## Integrazione Google Forms
 
-Per aggiungere il form di prenotazione:
+Il sito include un **form di prenotazione personalizzato** integrato con Google Forms.
 
-1. Crea un Google Form con i campi necessari (nome, email, data, tipo di trattamento, etc.)
-2. In Google Forms, clicca su "Invia" e seleziona l'opzione "Embed"
-3. Copia il codice iframe
-4. Apri il file `content/prenota.md`
-5. Sostituisci il commento con il codice embed del tuo Google Form
+**📋 Per configurare il form, segui la guida dettagliata:**
+→ [GOOGLE_FORM_SETUP.md](GOOGLE_FORM_SETUP.md)
 
-Esempio:
-```html
-<iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
-```
+La guida ti spiega passo-passo come:
+- Creare il Google Form con i campi corretti
+- Ottenere il Form ID e gli Entry IDs
+- Configurare le notifiche email
+- Testare il funzionamento
+
+Il form è già stilizzato e include:
+- Validazione dei campi
+- Redirect automatico alla pagina "Grazie" dopo l'invio
+- Design responsive
+- Supporto dark mode
 
 ## Personalizzazione
 

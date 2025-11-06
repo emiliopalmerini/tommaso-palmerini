@@ -1,0 +1,119 @@
+/* Contact Form Styling */
+
+#contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--color-neutral-100, #f9fafb);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-neutral-800, #1f2937);
+  font-size: 0.95rem;
+}
+
+.required {
+  color: #dc2626;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-neutral-300, #d1d5db);
+  border-radius: 6px;
+  background-color: var(--color-neutral-50, #ffffff);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-primary-600, #2563eb);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--color-neutral-400, #9ca3af);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+select.form-input {
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-primary-600, #2563eb);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: var(--color-primary-700, #1d4ed8);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  #contact-form {
+    background: var(--color-neutral-800, #1f2937);
+  }
+
+  label {
+    color: var(--color-neutral-200, #e5e7eb);
+  }
+
+  .form-input {
+    background-color: var(--color-neutral-700, #374151);
+    border-color: var(--color-neutral-600, #4b5563);
+    color: var(--color-neutral-100, #f3f4f6);
+  }
+
+  .form-input:focus {
+    border-color: var(--color-primary-500, #3b82f6);
+  }
+
+  .form-input::placeholder {
+    color: var(--color-neutral-500, #6b7280);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  #contact-form {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+}
